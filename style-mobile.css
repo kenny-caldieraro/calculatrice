@@ -1,0 +1,40 @@
+input {
+  width: 5rem;
+  height: 3rem;
+  margin: 0 0.5rem;
+  font-size: 1.8rem;
+}
+
+.elem1,
+.elem2,
+.elem3,
+.elem4,
+.elem5 {
+  margin: 0.5rem;
+}
+
+.touches {
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  height: 35vh;
+}
+
+.elem5 {
+  width: 100%;
+  margin-left: 5.8rem;
+}
+
+.reset,
+.pin {
+  width: 39%;
+}
+
+.mode {
+  margin: 0;
+  display: none;
+}
+
+textarea {
+  width: 85%;
+}

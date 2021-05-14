@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="only screen and (max-width:1800px)" href="style-mobile.css">
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap"   rel="stylesheet">
+
+</head>
+<body>
+  <div class="theme">
+    <p>calc</p>
+    <p class="mode">THEME</p>
+    <div class="boite" >
+      <p class="number" >1  2  3</p>
+      <div class="button"></div>
+    </div>
+  </div>
+  <form class="touches" name="calculatrice">
+    <textarea readonly name="result" class="affiche"></textarea>
+    <div class="elem1">
+      <input type="button" value="7" name="b2" onClick="ajouter('7')">
+      <input type="button" value="8" name="b3" onClick="ajouter('8')">
+      <input type="button" value="9" name="b4" onClick="ajouter('9')">
+      <input class="del" type="reset" value="DEL" name="b17">
+    </div>
+    <div class="elem2">
+      <input type="button" value="4" name="b5" onClick="ajouter('4')">
+      <input type="button" value="5" name="b6" onClick="ajouter('5')">
+      <input type="button" value="6" name="b7" onClick="ajouter('6')">
+      <input type="button" value="+" name="b16" onClick="ajouter('+')">
+    </div>
+    <div class="elem3">
+      <input type="button" value="1" name="b8" onClick="ajouter('1')">
+      <input type="button" value="2" name="b9" onClick="ajouter('2')">
+      <input type="button" value="3" name="b10" onClick="ajouter('3')">
+      <input type="button" value="-" name="b13" onClick="ajouter('-')">
+    </div>
+    <div class="elem4">
+      <input type="button" value="." name="b15" onClick="ajouter('.')">
+      <input type="button" value="0" name="b14" onClick="ajouter('0')">
+      <input type="button" value="/" name="b12" onClick="ajouter('/')">
+      <input type="button" value="x" name="b11" onClick="ajouter('*')">
+    </div>
+    <div class="elem5">
+      <input class="del reset" type="reset" value="RESET" name="b17">
+      <input class="pin" type="button" value="=" name="b18" onClick="calcul()">
+    </div>
+  </form>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kenny</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
